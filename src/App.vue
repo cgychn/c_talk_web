@@ -1,23 +1,29 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <a-config-provider :locale="locale">
+    <div id="app">
+      <keep-alive>
+        <router-view/>
+      </keep-alive>
+    </div>
+  </a-config-provider>
 </template>
 
 <script>
+import zhCN from 'ant-design-vue/lib/locale-provider/zh_CN'
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      locale: zhCN
+    }
+  },
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  min-width: 1300px;
 }
+@import "assets/common";
 </style>
