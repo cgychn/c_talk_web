@@ -1,13 +1,25 @@
 <template>
   <div class="chat-message-container">
     <div class="chat-message-container-header">
-      <a-input placeholder="消息内容搜索" style="width: 150px;">
+      <a-input placeholder="消息内容搜索" style="width: 130px;">
         <a-icon slot="prefix" type="search" />
       </a-input>
-      <a-range-picker style="width: 200px;" />
-      <a-select mode="tags" style="width: 150px;" maxTagCount="1" placeholder="请选择消息类型">
-        <a-select-option v-for="i in 25" :key="(i + 9).toString(36) + i">
-          {{ (i + 9).toString(36) + i }}
+      <a-range-picker style="width: 225px;" />
+      <a-select mode="tags" style="width: 160px;" maxTagCount="0" placeholder="请选择消息类型">
+        <a-select-option value="0" :key="0">
+          文本
+        </a-select-option>
+        <a-select-option value="1" :key="1">
+          链接
+        </a-select-option>
+        <a-select-option value="2" :key="2">
+          视频
+        </a-select-option>
+        <a-select-option value="3" :key="3">
+          图片
+        </a-select-option>
+        <a-select-option value="4" :key="4">
+          文件
         </a-select-option>
       </a-select>
     </div>
@@ -20,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .chat-message-container {
   background: #444444;
   width: 600px;
@@ -46,6 +58,9 @@ export default {
 
 }
 .ant-select-selection__choice__content {
+  color: white;
+}
+.ant-select {
   color: white;
 }
 .anticon {
@@ -95,7 +110,7 @@ export default {
 }
 *::-webkit-scrollbar-track {
   /*滚动条里面轨道*/
-  box-shadow: inset 0px 0px 3px 3px rgb(0 0 0/20%);
+  box-shadow: inset 0px 0px 3px 3px #343434;
   border-radius: 2px;
   background: #383838;
 }
@@ -108,5 +123,89 @@ export default {
 }
 .ant-calendar-input {
   background: #444444 !important;
+  color: white !important;
+}
+.ant-calendar-year-select {
+  color: #dcdcdc !important;
+}
+.ant-calendar-month-select {
+  color: #c7c7c7 !important;
+}
+.ant-calendar-range-picker-separator {
+  color: #b6b6b6;
+}
+.ant-calendar-range-middle {
+  color: #b6b6b6;
+}
+.ant-calendar-range-picker-input {
+  color: #e5e5e5;
+}
+.ant-calendar-picker-clear {
+  color: #f55656;
+  background: transparent !important;
+}
+.ant-calendar-picker-clear:hover {
+  color: #f55656;
+  background: transparent !important;
+}
+.ant-calendar-date {
+  color: #d7d7d7;
+}
+.ant-calendar-last-month-cell {
+  .ant-calendar-date {
+    color: #999999;
+  }
+  .ant-calendar-date:hover {
+    color: #999999;
+  }
+}
+.ant-calendar-next-month-btn-day {
+  .ant-calendar-date {
+    color: #999999;
+  }
+  .ant-calendar-date:hover {
+    color: #999999;
+  }
+}
+.ant-calendar-in-range-cell::before {
+  background: #7d7d7d !important;
+}
+.ant-calendar-date:hover {
+  background: #616161;
+}
+.ant-calendar-selected-day {
+  .ant-calendar-date {
+    background: #979797 !important;
+  }
+}
+.ant-calendar-today {
+  .ant-calendar-date {
+    border-color: #ffb4b4;
+    color: #ffb4b4;
+  }
+}
+.ant-calendar-prev-month-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-prev-year-btn::after {
+  border-color: white !important;
+}
+.ant-calendar-prev-year-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-next-month-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-next-year-btn::after {
+  border-color: white !important;
+}
+.ant-calendar-next-year-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-input-wrap {
+  border-color: #939393;
+}
+.ant-calendar {
+  border-color: #686868;
 }
 </style>

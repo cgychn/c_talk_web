@@ -27,5 +27,6 @@ export default {
 .ant-input {
   background: #494949 !important;
   border-color: #404040 !important;
+  color: #e5e5e5;
 }
 </style>

@@ -117,6 +117,7 @@ export default {
 .ant-input {
   background: #555555 !important;
   border-color: #000 !important;
+  color: #e5e5e5;
 }
 
 </style>
