@@ -17,7 +17,137 @@ html, body {
   }
 }
 
+.ant-select-selection {
+  background: #494949 !important;
+  border-color: #404040 !important;
+}
+.ant-select-selection__choice {
+  background: #2d2d2d !important;
+  border-color: #404040 !important;
+}
+.ant-select-selection__choice__content {
+  color: white !important;
+}
+.ant-select {
+  color: white !important;
+}
+.anticon {
+  color: white;
+}
+.ant-select-dropdown-content {
+  background: #575757 !important;
+}
+.ant-select-dropdown-menu-item {
+  background: #575757 !important;
+  color: white !important;
+}
+.ant-select-selected-icon {
+  display: none !important;
+}
+.ant-select-dropdown-menu-item-active {
+  background: #999999 !important;
+}
+.ant-select-dropdown-menu-item-selected {
+  background: #767676 !important;
+}
+.ant-select-dropdown-menu-item:hover {
+  background: #999999 !important;
+}
 
+.ant-calendar-panel {
+  background: #444444;
+  color: white !important;
+}
+.ant-calendar-body {
+  border-top: 1px solid #6d6d6d !important;
+}
+.ant-calendar-input {
+  background: #444444 !important;
+  color: white !important;
+}
+.ant-calendar-year-select {
+  color: #dcdcdc !important;
+}
+.ant-calendar-month-select {
+  color: #c7c7c7 !important;
+}
+.ant-calendar-range-picker-separator {
+  color: #b6b6b6 !important;
+}
+.ant-calendar-range-middle {
+  color: #b6b6b6 !important;
+}
+.ant-calendar-range-picker-input {
+  color: #e5e5e5 !important;
+}
+.ant-calendar-picker-clear {
+  color: #f55656 !important;
+  background: transparent !important;
+}
+.ant-calendar-picker-clear:hover {
+  color: #f55656 !important;
+  background: transparent !important;
+}
+.ant-calendar-date {
+  color: #d7d7d7 !important;
+}
+.ant-calendar-last-month-cell {
+  .ant-calendar-date {
+    color: #999999 !important;
+  }
+  .ant-calendar-date:hover {
+    color: #999999 !important;
+  }
+}
+.ant-calendar-next-month-btn-day {
+  .ant-calendar-date {
+    color: #999999 !important;
+  }
+  .ant-calendar-date:hover {
+    color: #999999 !important;
+  }
+}
+.ant-calendar-in-range-cell::before {
+  background: #7d7d7d !important;
+}
+.ant-calendar-date:hover {
+  background: #616161;
+}
+.ant-calendar-selected-day {
+  .ant-calendar-date {
+    background: #979797 !important;
+  }
+}
+.ant-calendar-today {
+  .ant-calendar-date {
+    border-color: #ffb4b4 !important;
+    color: #ffb4b4 !important;
+  }
+}
+.ant-calendar-prev-month-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-prev-year-btn::after {
+  border-color: white !important;
+}
+.ant-calendar-prev-year-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-next-month-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-next-year-btn::after {
+  border-color: white !important;
+}
+.ant-calendar-next-year-btn::before {
+  border-color: white !important;
+}
+.ant-calendar-input-wrap {
+  border-color: #939393 !important;
+}
+.ant-calendar {
+  border-color: #686868 !important;
+}
 
 // 去除chrome outline 边框
 * {

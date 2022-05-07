@@ -64,7 +64,7 @@ export default {
 <style scoped>
 .chat-contact-container {
   width: 350px;
-  height: 800px;
+  height: 100%;
 }
 .chat-contact-header {
   height: 64px;
@@ -99,7 +99,7 @@ export default {
 .ant-input {
   background: #494949 !important;
   border-color: #404040 !important;
-  color: #e5e5e5;
+  color: #e5e5e5 !important;
 }
 .chat-contact-body-item {
   width: 100%;

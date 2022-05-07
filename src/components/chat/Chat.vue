@@ -15,18 +15,20 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-  transition: .5s all ease;
-}
 .chat-container {
   background: #323232;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+  height: 100%;
+  .ant-input {
+    background: #494949 !important;
+    border-color: #404040 !important;
+    color: #e5e5e5 !important;
+  }
+  .anticon {
+    color: white;
+  }
 }
-.ant-input {
-  background: #494949 !important;
-  border-color: #404040 !important;
-  color: #e5e5e5;
-}
+
 </style>
